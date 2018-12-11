@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.5)  11 DEC 2018 09:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.5)  11 DEC 2018 11:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -399,6 +399,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
@@ -406,48 +411,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 <figures/task1_coarse_lowD.png, id=11, 959.83594pt x 371.88937pt>
 File: figures/task1_coarse_lowD.png Graphic file (type png)
 <use figures/task1_coarse_lowD.png>
-Package pdftex.def Info: figures/task1_coarse_lowD.png  used on input line 48.
+Package pdftex.def Info: figures/task1_coarse_lowD.png  used on input line 53.
 (pdftex.def)             Requested size: 513.11745pt x 198.80847pt.
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 <figures/task1_coarse_highD.png, id=21, 958.3303pt x 371.88937pt>
 File: figures/task1_coarse_highD.png Graphic file (type png)
 <use figures/task1_coarse_highD.png>
-Package pdftex.def Info: figures/task1_coarse_highD.png  used on input line 61.
+Package pdftex.def Info: figures/task1_coarse_highD.png  used on input line 66.
 
 (pdftex.def)             Requested size: 513.11745pt x 199.12057pt.
 <figures/task1_fine.png, id=22, 956.82469pt x 371.88937pt>
 File: figures/task1_fine.png Graphic file (type png)
 <use figures/task1_fine.png>
-Package pdftex.def Info: figures/task1_fine.png  used on input line 71.
+Package pdftex.def Info: figures/task1_fine.png  used on input line 76.
 (pdftex.def)             Requested size: 513.11745pt x 199.43266pt.
 [3 <./figures/task1_coarse_lowD.png (PNG copy)> <./figures/task1_coarse_highD.p
 ng (PNG copy)>]
 <figures/task2_coarse.png, id=26, 956.07187pt x 370.38374pt>
 File: figures/task2_coarse.png Graphic file (type png)
 <use figures/task2_coarse.png>
-Package pdftex.def Info: figures/task2_coarse.png  used on input line 90.
+Package pdftex.def Info: figures/task2_coarse.png  used on input line 95.
 (pdftex.def)             Requested size: 513.11745pt x 198.7835pt.
 <figures/task2_fine.png, id=27, 956.07187pt x 371.13657pt>
 File: figures/task2_fine.png Graphic file (type png)
 <use figures/task2_fine.png>
-Package pdftex.def Info: figures/task2_fine.png  used on input line 101.
+Package pdftex.def Info: figures/task2_fine.png  used on input line 106.
 (pdftex.def)             Requested size: 513.11745pt x 199.18753pt.
  [4 <./figures/task1_fine.png (PNG copy)> <./figures/task2_coarse.png (PNG copy
 )>] [5 <./figures/task2_fine.png (PNG copy)>]
 <figures/datafit.png, id=35, 462.528pt x 346.896pt>
 File: figures/datafit.png Graphic file (type png)
 <use figures/datafit.png>
-Package pdftex.def Info: figures/datafit.png  used on input line 190.
+Package pdftex.def Info: figures/datafit.png  used on input line 195.
 (pdftex.def)             Requested size: 359.18063pt x 269.3974pt.
  [6 <./figures/datafit.png>] [7]
 <figures/datafit_2.png, id=46, 462.528pt x 346.896pt>
 File: figures/datafit_2.png Graphic file (type png)
 <use figures/datafit_2.png>
-Package pdftex.def Info: figures/datafit_2.png  used on input line 269.
+Package pdftex.def Info: figures/datafit_2.png  used on input line 274.
 (pdftex.def)             Requested size: 359.18063pt x 269.3974pt.
  [8 <./figures/datafit_2.png>] [9] (./5051CalvertMcGoughP2.aux)
 
@@ -461,7 +466,7 @@ Here is how much of TeX's memory you used:
  9594 multiletter control sequences out of 15000+600000
  9681 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,10n,40p,724b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,40p,843b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -474,7 +479,7 @@ amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on 5051CalvertMcGoughP2.pdf (9 pages, 453451 bytes).
+Output written on 5051CalvertMcGoughP2.pdf (9 pages, 457451 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream

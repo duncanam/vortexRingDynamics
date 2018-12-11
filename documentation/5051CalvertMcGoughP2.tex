@@ -25,9 +25,9 @@
 \newpage
 
 \section{Introduction}
-In this project, the dynamics of the interaction between two ideal vortex rings were examined.\\
+In this project, the dynamics of the interaction between two ideal vortex rings was examined.\\
 
-IN theory, a vortex ring is formed when thw two ends of a finite length \textit{vortex filament} are connected to eachother. This connection forms a ring of radius \textit{R}, with a strength $\Gamma$. While these rings are infintesimally small and have no mass, they do induce a velocity at a distance, due to the circulation about the rings. This velocity can be characterized relatively simply by applying the Biot-Savart Law:
+In theory, a vortex ring is formed when the two ends of a finite length \textit{vortex filament} are connected to eachother. This connection forms a ring of radius \textit{R}, with a strength $\Gamma$. While these rings are infintesimally small and have no mass, they do induce a velocity at a distance, due to the circulation about the rings. This velocity can be characterized relatively simply by applying the Biot-Savart Law:
 
 \[ u_{induced} = \frac{\Gamma}{4\pi}\int_{c} \frac{\hat e_{\omega} \times (\vec x - \vec x')}{|(\vec x - \vec x')|} dl \]
 
@@ -35,12 +35,17 @@ Where $\hat e_{\omega}$ is the direction about which the vorticity acts about, $
 
 The simplifying assumption used is as follows: since we know (by our setup) that both vortex rings are initially perfectly circular, we can expect that they will remain circular for all time. Just by noticing this simple fact, we can now determine the motion of an entire vortex ring by analyzing the velocity induced at a \textbf{single point} along it. The application of this idea will be discussed further in the following sections.
 
-It should also be noted that, in order to simplify the computations, this integral was converted from cartesian to polar coordinates. Knowing that: \[dl = Rd\theta\] \[x = Rcos(\theta)\] \[y = Rsin(\theta)\] We can tranform the terms in the Biot-Savart integral as follws: \[\vec x = [   ,   ,   ]^T\] \[\vec x' = [  ,  ,  ]^T\] \[e_{\omega} = [  ,  ,  ]^T\]
+It should also be noted that, in order to simplify the computations, this integral was converted from cartesian to polar coordinates. Knowing that: \[dl = Rd\theta\] \[x = Rcos(\theta)\] \[y = Rsin(\theta)\] We can tranform the terms in the Biot-Savart integral as follws: \[\vec x = [  Rcos(\theta) , Rsin(\theta)  , h  ]^T\] \[\vec x' = [  Rcos(\theta ') , Rsin(\theta '')  , h' ]^T\] \[e_{\omega} = [ sin(\theta ') , -cos(\theta '  , 0 ]^T\]
+
+Where h is the distance from the y-z plane of the center of the respective ring. After making out subtitutions in the Biot-Savart equation, we can numerically integrate the equation about one of the rings (from 0 - 2$\pi$ in this case) using a trapezoidal apporximation. The result is the velocity induced from one entire ring at a single specified point.\\
+
+Now that we have a method for numerically solving the Biot-Savart law, we can start to solve for the motion of the vortex rings. To do this, we first exploit a major simplification - since both rings start as perfect, radially symmetric, circles, we can expect that they will remain this shape for all time. This is to say that the only changes that occur will be changes in the size of both rings, and their distances away from the y-z plane. Furthermore, this means that if we can solve for the motion of \textit{one discrete point} on a ring, we can assume the rest of the rings follows the same motion.\\
+
+To solve for the dynamics of the full problem,  the induced velocity effects were broken up into four parts - ring 1 on itself, ring 2 on itself and each ring on the other. In the code for simulating the motion, these four calculations are made at each time step, then the position and size of each ring is updated. The radius of each ring, the distance between the two rings as well as the cartesian positions of each point on the rings are plotted after each time step, producing an animation (or "movie", if you will) of the ring interaction. These plot, as well as text outputs of useful information, can be used to analyze the motion of the rings and produce empirical formulas for important characteristics of the interactions. This application of the code will be discussed further in the rest of this report.
 
 \section{Task 1}
 
 For this section the project, the interaction between "two vortex rings of identical strength and a similar sense of rotation" were analyed. It is expected that the rings will exhibit a "leap-frogging" frogging behavior where they move across the domain, moving inside and outside of eachother, which is exactly what happened.\\
-
 With a time step 0f 0.2s, 100 discrete points in each ring, an initial radius of 1m and an initial distance apart 1m, the simulation was run for 50s. The resulting radius vs. time and horizontal distance between rings vs. time output plots are shown below:
 
 \begin{figure}[H]
@@ -83,7 +88,7 @@ Two videos (animations) of the transient states obsevred during this simulation 
 
 \section{Task 2}
 
-For this section of the project, the interaction between "two vortex rings of identical strength and an opposite sense of rotation". In much the same was as with the first task, the simulation was first run with ethe "low resolution" settings from before. The initial setup was such that the initial distance between the rings was 10m, their radii start at 1m, $\Gamma$ was set to 1 and the timestep was set to 0.2 seconds. The simulation was run for ****s to produce the following results:
+For this section of the project, the interaction between "two vortex rings of identical strength and an opposite sense of rotation" was examined. In much the same was as with the first task, the simulation was first run with ethe "low resolution" settings from before. The initial setup was such that the initial distance between the rings was 10m, their radii start at 1m, $\Gamma$ was set to 1 and the timestep was set to 0.2 seconds. The simulation was run for ****s to produce the following results:
 
 \begin{figure}[H]
    \centering
