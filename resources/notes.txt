@@ -1,0 +1,26 @@
+
+'''
+NOTES FROM OFFICE HOURS
+
+
+First, get the self propulsion due to ONE ring working
+
+Vinduced = Gamma*4*pi* integral(eW x x-x')/(x-x')^3
+
+
+theta' is location around the circle that you are summing the effects at?
+
+x = [Rcos(theta)   Rsin(theta)   z]
+
+x' = [Rcos(theta') Rsin(theta') z']
+
+eW = "e-omega" = [sin(theta') cos(theta') 0]
+
+V = integral from 0 to 2*pi (from before * R')dtheta'
+
+---> "integrate along theta'"
+
+
+inducedVelocity(Gamma,R,R',z,z', timeStep?,rotationDirections?)
+
+'''
